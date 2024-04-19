@@ -1,0 +1,62 @@
+<!--pages/paysuccess/paysuccess.wxml-->
+<view class="content">
+    <view class="su-c">
+        <image class="su-img" src="../../icons/success.png" mode=""/>
+        <view class="su-left">
+            <!-- <view class="su-title">支付成功</view>
+            <view class="su-tip">感谢购买</view> -->
+            <view class="su-tip" >请在5分钟有效期内打开
+            <input class="channel_input" value="{{payUrl}}" type='text'></input>
+            </view>
+        
+        </view>
+
+        <view style="display: flex;align-items: center;    margin-top: 200px;">
+            <button data-id="{{productObj}}" bindtap="paycomplet"  style="background-color: rgb(230, 80, 80);">支付完成</button>
+        </view>
+    </view>
+    <view class="fan-con">
+    <image class="fan-img" src="../../icons/adress.png" mode="" />
+    <view class="fan-c">
+        <view class="fsd">
+            <view class="fan-title">{{address[0].userName}}</view>
+            <view class="fan-phone">{{address[0].telNumber}}</view>
+        </view>
+        <view class="fan-tip">{{address[0].address}}</view>
+    </view>
+</view>
+    <view class="cart_content">
+    <view class="cart-title">商品详情</view>
+  <view class="cart_main">
+      <view class="cart_item"
+      wx:for="{{cart}}"
+      wx:key="id"
+      >
+        <!-- 商品图片开始 -->
+        <navigator class="cart_img_wrap" url="/pages/product_detail/index?id={{item.productid}}">
+          <image style="height: 100px; width: 90px;" src="{{item.detialImage}}"></image>
+        </navigator>
+        <!-- 商品图片结束 -->
+
+        <!-- 商品信息开始 -->
+        <view class="cart_info_wrap">
+          <navigator class="ndnd" url="/pages/product_detail/index?id={{item.productid}}">
+            <view class="goods_name">{{item.detialName}}</view>
+            <view class="cart_num_tool">
+              <view class="goods_num">×{{item.num}}</view>
+            </view>
+            <view wx:if="{{item.cartType == 1}}" class="goods_price">
+                        ￥{{item.price}}
+                    </view>
+                    <view wx:else class="goods_price">
+                        ￥0
+                    </view>
+          </navigator>
+        </view>
+        <!-- 商品信息结束 -->
+      </view>
+      <view class="marginl">共{{totalNum}}件,小计:<text class="total_price_text" decode="{{true}}">&nbsp;￥{{totalPrice}}</text></view>
+  </view>
+</view>
+
+</view>

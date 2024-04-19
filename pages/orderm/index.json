@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "Tabs":"../../components/Tabs/Tabs"
+  },
+  "navigationBarTitleText":"盲盒订单",
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark"
+}

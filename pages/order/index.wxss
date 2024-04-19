@@ -1,0 +1,80 @@
+.order_main .order_item {
+  padding: 20rpx;
+  border-bottom: 1rpx solid #ccc;
+  color: #666;
+}
+.order_main .order_item .order_no_row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10rpx 0;
+}
+.order_main .order_item .order_price_row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10rpx 0;
+}
+.order_main .order_item .order_price_row .order_price_value {
+  color: var(--themeColor);
+  font-size: 32rpx;
+}
+.order_main .order_item .order_time_row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10rpx 0;
+}
+.order_pay_wrap {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #67c9a8;
+  color: #fff;
+  font-size: 32rpx;
+  font-weight: 600;
+  border-radius: 20px;
+  width: 240rpx;
+  height: 68rpx;
+  margin: 10rpx 10rpx 10rpx 480rpx
+}
+
+.order-img {
+  width: 120rpx;
+  height: 120rpx;
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pin {
+    margin-top: 20rpx;
+}
+.tian-item {
+    display: flex;
+    align-items: center;
+    height: 80rpx;
+    justify-content: space-between;
+}
+.item-title {
+    font-size: 30rpx;
+    color: #000;
+}
+input {
+    width: 60%;
+    font-size: 30rpx;
+  color: #000000;
+  letter-spacing: 0;
+  font-weight: 500;
+}
+.sure {
+    background: #67c9a8;
+  color: #fff;
+  font-size: 32rpx;
+  font-weight: 600;
+  border-radius: 20px;
+  width: 15%;
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

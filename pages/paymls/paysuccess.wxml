@@ -1,0 +1,16 @@
+<!--pages/paysuccess/paysuccess.wxml-->
+<view class="content">
+    <view class="su-c">
+        <image class="su-img" src="../../icons/success.png" mode="" />
+        <view class="su-left">
+            <view class="su-tip">请在5分钟有效期内打开该链接进行付款
+                <input class="channel_input" value="{{telNumber}}" type='text'></input>
+            </view>
+        </view>
+        <view style="display: flex;align-items: center;    margin-top: 200px;">
+            <button data-id="{{productObj}}" bindtap="paycomplet" style="background-color: rgb(230, 80, 80);">支付完成</button>
+
+        </view>
+    </view>
+
+</view>

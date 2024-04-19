@@ -1,0 +1,25 @@
+<view class="content">
+		<view class="con-header">
+			<view class="titile">
+				Hello!
+			</view>
+			<view class="titile">
+				登录
+			</view>
+		</view>
+		<view class="con-center">
+			<view class="item">
+				<input class="input" type="text" bindinput="name_input" value="{{name}}" placeholder="请输入用户名"
+					placeholder-class="address" />
+			</view>
+			<view class="item">
+				<input class="input" type="password" bindinput="p_input"  value="{{password}}" placeholder="请输入密码" />
+			</view>
+			<view class="button" bind:tap="logins">
+				登录
+			</view>
+			<view class="sign" bind:tap="jump">
+				没有账号?<text class="tip">点此注册</text>
+			</view>
+		</view>
+	</view>

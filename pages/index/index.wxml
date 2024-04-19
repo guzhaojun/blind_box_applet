@@ -1,0 +1,82 @@
+<!--index.wxml-->
+<view>
+<!-- 搜索框开始 -->
+  <SearchBar></SearchBar>
+<!-- 搜索框结束 -->
+
+<!-- 轮播图开始 -->
+<view class="index-con">
+</view>
+<view class="index_swiper">
+  <swiper indicator-dots autoplay circular>
+    <swiper-item 
+    wx:for="{{swiperList}}"
+    wx:for-item="swiper"
+    wx:key="id"
+    >
+      <navigator url="/pages/product_detail/index?id={{swiper.id}}">
+        <image style="height: 180px;" src="{{swiper.value}}"></image>
+      </navigator>
+    </swiper-item>
+  </swiper>
+</view>
+<!-- 轮播图结束 -->
+
+<!-- 商品大类显示开始 -->
+  <view class="index_bigType">
+    <view class="bigTypeRow">
+      <navigator
+      bindtap="handleTypeJump"
+      data-index="{{index}}"
+      wx:for="{{bigTypeList_row1}}"
+      wx:for-item="bigType"
+      wx:key="id"
+      >
+        <image style="width: 160rpx; height: 160rpx;" src="{{bigType.image}}"></image>
+        <view class="nav-name">{{bigType.name}}</view>
+      </navigator>
+    </view>
+  </view>
+ 
+
+<view class="navigation-view">
+    <view class="navigation-item" data-index="0" bind:tap="jump">
+        <image class="navigation-img" src="../../icons/cao.jpg" mode=""></image>
+        <view class="navigation-title">
+            商城
+        </view>
+    </view>
+    <view class="navigation-item" data-index="1"  bind:tap="jump">
+        <image class="navigation-img" src="../../icons/mang.jpg" mode=""></image>
+        <view class="navigation-title">
+            盲盒
+        </view>
+    </view>
+    <view class="navigation-item" data-index="2"  bind:tap="jump">
+        <image class="navigation-img" src="../../icons/bian.jpg" mode=""></image>
+        <view class="navigation-title">
+           购物车
+        </view>
+    </view>
+</view>
+
+
+  <view class="index_hotProduct">
+    <view class="product_title">新品推荐</view>
+    <scroll-view scroll-x  class="product_list">
+      <view class="product_detail"
+      wx:for="{{hotProductList}}"
+      wx:for-item="hotProduct"
+      wx:key="id"
+      >
+        <navigator url="/pages/box_detail/index?id={{hotProduct.id}}">
+          <image  style="height: 147px;" src="{{hotProduct.boxImg}}"></image>
+          <view class="product_name">{{hotProduct.boxName}}</view>
+          <view class="product_tip">{{hotProduct.description}}</view>
+          <view class="product_price">￥{{hotProduct.boxPrice}}</view>
+        </navigator>
+      </view>
+    </scroll-view>
+  </view>
+<!-- 商品热卖推荐结束 -->
+</view>

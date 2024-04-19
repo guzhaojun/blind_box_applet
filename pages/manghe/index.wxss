@@ -1,0 +1,73 @@
+.cates {
+  height: 100%;
+}
+.product_list{
+    background: #fff;
+  margin: 10rpx !important;
+  background-color: #fff;
+}
+.cates .cates_container {
+  height: calc( 100vh - 90rpx );
+  display: flex;
+}
+.cates .cates_container .left_menu {
+  width: 30%;
+}
+.cates .cates_container .left_menu .menu_item {
+  margin-top: 10rpx;
+  height: 120rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+}
+.cates .cates_container .left_menu .active {
+  font-weight: bolder;
+  color: #67c9a8;
+  border-left: 8rpx solid #67c9a8;
+}
+.cates .cates_container .right_content {
+  width: 70%;
+}
+.cates .cates_container .right_content .productType {
+  padding: 30rpx 20rpx 30rpx 20rpx;
+}
+.cates .cates_container .right_content .productType .productType_title {
+  font-weight: bolder;
+}
+.cates .cates_container .right_content .productType .product_list navigator {
+    display: flex;
+}
+.cates .cates_container .right_content .productType .product_list navigator image {
+  flex: 1;
+  border-radius: 5rpx;
+}
+.cates .cates_container .right_content .productType .product_list navigator .right {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-width: 0;
+  margin-left: 15rpx;
+}
+.cates .cates_container .right_content .productType .product_list navigator .right .product_name {
+  padding-top: 10rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.cates .cates_container .right_content .productType .product_list navigator .right .product_price {
+  padding-bottom: 10rpx;
+  color: #67c9a8;
+}
+
+.product_tip {
+    font-size: 22rpx;
+    color: #bdb9b9;
+    text-overflow: -o-ellipsis-lastline;
+	  overflow: hidden;
+	  text-overflow: ellipsis;
+	  display: -webkit-box;
+	  -webkit-line-clamp: 2;
+	  -webkit-box-orient: vertical;
+}

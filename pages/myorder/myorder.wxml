@@ -1,0 +1,39 @@
+<view class="content">
+    <view class="con-header">
+        <view class="header-left">
+            <image class="hea-img" src="../../icons/mo.png" mode=""/>
+            <view class="left-tip">金牌骑手</view>
+        </view>
+        <view class="header-r">
+            <view class="header-title">{{name}}</view>
+            <view class="header-titles">满意度 99%</view>
+        </view>
+    </view>
+    <view class="show-con">
+        <view class="show-item">
+            <view class="item-title">完成订单</view>
+            <view class="item-tip">{{totus}}单</view>
+        </view>
+        <view class="show-item">
+            <view class="item-title">订单总数</view>
+            <view class="item-tip">{{zto}}单</view>
+        </view>
+    </view>
+    <view class="app_info_wrap">
+        <!-- <view class="app_info_item app_info_contact">
+            <text>已完成订单</text>
+            <text class="app-tie">></text>
+        </view> -->
+        <view class="app_info_item app_info_contact">
+            <text>联系客服</text>
+            <text class="app-tie">400-695-12345</text>
+        </view>
+        <view class="app_info_item app_info_contact" bindtap="open">
+            <text wx:if="{{!isShow}}">开启接单</text>
+            <text wx:if="{{isShow}}">中途休息</text>
+        </view>
+    </view>
+    <view class="buttond" bindtap="tui">
+        退出登录
+    </view>
+</view>

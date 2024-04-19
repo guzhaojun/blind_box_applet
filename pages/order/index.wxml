@@ -1,0 +1,95 @@
+<!-- <view class="tabs">
+  <view class="tabs_title">
+    <view 
+    bindtap="handleItemTap"
+    data-index="{{index}}"
+    wx:for="{{tabs}}"
+    wx:key="id"
+    class="title_item {{item.isActive?'active':''}}">
+    {{item.value}}
+    </view>
+  </view>
+  <view class="tabs_content">
+    <view class="order_main">
+      <view 
+      wx:for="{{orders}}"
+      wx:key="id"
+      class="order_item">
+        <view class="order_no_row">
+          <view class="order_no_text">订单编号</view>
+          <view class="order_no_value">{{item.orderNo}}</view>
+        </view>
+        <view class="order_price_row">
+          <view class="order_price_text">订单价格</view>
+          <view class="order_price_value">￥{{item.totalPrice}}</view>
+        </view>
+        <view class="order_time_row">
+          <view class="order_time_text">订单日期</view>
+          <view class="order_time_value">{{item.createDate}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view> -->
+<Tabs tabs="{{tabs}}" bindtabsItemChange="handleTabsItemChange">
+  <view class="order_main">
+      <view 
+      wx:for="{{orders}}"
+      wx:key="id"
+      class="order_item">
+      <view  wx:for="{{item.goods}}"  wx:key="id">
+        <view class="order_no_row">
+          <view class="order_no_text">商品名称</view>
+          <view class="order_no_value">{{item.goodsName}}</view>
+        </view>
+        <view class="order_no_row">
+          <view class="order_no_text center">商品图片</view>
+          <image class="order-img" src="{{item.goodsPic}}"></image>
+        </view>
+        <view class="order_no_row" >
+          <view class="order_no_text">购买数量</view>
+          <view class="order_no_value">{{item.goodsNumber}}</view>
+        </view>
+
+
+        </view>
+
+        <!-- <view class="order_no_row"  wx:for="{{item.goods}}"  wx:key="id">
+          <view class="order_no_text center">商品图片</view>
+          <image class="order-img" src="{{item.goodsPic}}"></image>
+        </view>
+        <view class="order_no_row" wx:for="{{item.goods}}"  wx:key="id" >
+          <view class="order_no_text">购买数量</view>
+          <view class="order_no_value">{{item.goodsNumber}}</view>
+        </view> -->
+        <view class="order_no_row">
+          <view class="order_no_text">订单编号</view>
+          <view class="order_no_value">{{item.orderNo}}</view>
+        </view>
+        <view class="order_price_row">
+          <view class="order_price_text">订单价格</view>
+          <view class="order_price_value">￥{{item.totalprice}}</view>
+        </view>
+        <view class="order_time_row">
+          <view class="order_time_text">订单日期</view>
+          <view class="order_time_value">{{item.createdTime}}</view>
+        </view>
+        <!-- 待收货显示按钮 -->
+        <view class="order_pay_wrap" bindtap="handlePay" data-index="{{index}}" wx:if="{{tabs[3].isActive}}">
+          评价
+        </view>
+        <!-- 退货退款显示按钮 -->
+        <view class="order_pay_wrap" bindtap="sales" data-index="{{item.id}}" wx:if="{{tabs[1].isActive}}">
+          取消
+        </view>
+       <view class="pin" wx:if="{{tabs[3].isActive && item.show}}">
+            <view class="tian-item" >
+                <view class="item-title">评价</view>
+                <input type="text" value="{{ping}}" placeholder="请输入评价" bindinput="z_input" data-bid="{{item.id}}"/>
+                <view class="sure" bind:tap="addPing">确定</view>
+            </view>
+           
+       </view>
+      </view>
+    </view>
+</Tabs>

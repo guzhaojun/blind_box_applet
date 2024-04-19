@@ -1,0 +1,37 @@
+<view class="content">
+		<view class="con-header">
+			<view class="titile">
+				Hello!
+			</view>
+			<view class="titile">
+				欢迎光临
+			</view>
+		</view>
+		<view class="con-center">
+			<view class="item">
+				<input class="input" type="text" bindinput="name_input" value="{{name}}" placeholder="请输入用户名"
+					placeholder-class="address" />
+			</view>
+            <view class="item">
+				<input class="input" type="number" bindinput="phone_input" value="{{phone}}" placeholder="请输入手机号"
+					placeholder-class="address" maxlength="11" />
+			</view>
+			<view class="item">
+				<input class="input" type="password" bindinput="p_input"  value="{{password}}" placeholder="请输入密码" />
+			</view>
+            <!-- <view class="item">
+				<input class="input" bindinput="ps_input"  value="{{passwords}}" placeholder="请再次输入密码" />
+			</view> -->
+            <view class="page-section">
+                <radio-group class="rrr" bindchange="radioChange">
+                    <label class="radio" wx:for="{{items}}" wx:key="{{item.value}}" class="dndn">
+                        <radio value="{{item.value}}" checked="{{item.checked}}"/>
+                        <view class="weui-cell__bd">{{item.name}}</view>
+                    </label>
+                </radio-group>
+            </view>
+			<view class="button" bind:tap="logins">
+				注册
+			</view>
+		</view>
+	</view>

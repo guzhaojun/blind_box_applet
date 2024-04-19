@@ -1,0 +1,70 @@
+.index_swiper{
+  swiper{
+    width: 750rpx;
+    height: 375rpx;
+    swiper-item{
+      image{
+        width: 100%;
+      }
+    }
+  }
+}
+.index_bigType{
+  padding-top: 30rpx;
+  background-color: #FFFFFF;
+  .bigTypeRow{
+    display: flex;
+    navigator{
+      flex:1;
+      image{
+        width: 120rpx;
+        margin-left: 30rpx;
+      }
+      .nav-name{
+        text-align: center;
+        font-size: 12px;
+        font-style: normal;
+      }
+    }
+  }
+}
+
+.index_hotProduct{
+  .product_title{
+    font-size: 32rpx;
+    font-weight: 600;
+    padding: 20rpx;
+    margin-top: 20rpx;
+    color: var(--themeColor);
+    background-color: #F0F0F0;
+  }
+  .product_list{
+    display: flex;
+    flex-wrap: wrap;//自动换行
+    background-color: #eeebeb;
+    .product_detail{
+      margin: 15rpx;
+      width: 46%;
+      text-align: center;
+      background-color: #FFFFFF;
+      navigator{
+        image{
+          width: 100%;
+          height: 400rpx;
+        }
+        .product_name{
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;//将多余的文字省略
+          
+        }
+        .product_price{
+          color: var(--themeColor);
+        }
+        button{
+
+        }
+      }
+    }
+  }
+}

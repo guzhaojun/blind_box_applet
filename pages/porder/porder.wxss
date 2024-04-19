@@ -1,0 +1,128 @@
+/* pages/porder/porder.wxss */
+page {
+    background: #f8f8f8;
+}
+.content {
+
+}
+.tab-con {
+    width: 750rpx;
+    height: 60rpx;
+    display: flex;
+    align-items: center;
+    background: #67c9a8;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 10;
+}
+.tab-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30rpx;
+    color: #fff;
+
+}
+.tab-line {
+    width: 80rpx;
+    height: 6rpx;
+    background-color: #fff;
+}
+.active {
+    font-weight: 700;
+}
+
+.order-con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top:60rpx;
+}
+.order-item {
+    width: 690rpx;
+    padding: 30rpx;
+    background-color: #fff;
+    margin-top: 30rpx;
+    position: relative;
+    border-radius: 20rpx;
+    box-shadow: 0 8rpx 40rpx 0 rgba(219,220,226,0.6);
+
+}
+.item-left {
+    display: flex;
+    margin-top: 10rpx;
+}
+.dndn {
+    height: 80rpx;
+    display: flex;
+    margin-top: -30rpx;
+    align-items: center;
+    border-bottom: 1rpx dashed rgb(197, 194, 194);
+}
+.left-img {
+    width: 40rpx;
+    height: 40rpx;
+    margin-right: 10rpx;
+}
+.item-adress {
+    font-size: 30rpx;
+    color: #000;
+    font-weight: 500;
+}
+
+.item-tip {
+    font-size: 30rpx;
+    color: #fff;
+    font-weight: 400;
+    width:120rpx;
+    height: 40rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FE4620;
+    border-radius: 0px 14rpx 0px 16rpx;
+    position: absolute;
+    top: 0rpx;
+    right: 0rpx;
+}
+.item-d {
+    margin-top: 60rpx;
+    font-size: 34rpx;
+    color: #000;
+    font-weight: 700;
+}
+.item-button {
+    width: 630rpx;
+    height: 80rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 34rpx;
+    color: #fff;
+    border-radius: 30rpx;
+    background-color: #67c9a8;
+    margin-top: 40rpx;
+}
+.button-tip {
+    width: 200rpx;
+			height: 80rpx;
+			position: fixed;
+			right: 0;
+			bottom: 266rpx;
+			font-size: 28rpx;
+			color: #FFFFFF;
+			letter-spacing: 0;
+			font-weight: 500;
+			text-align: center;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-image: linear-gradient(125deg, #67c9a8 0%, #99c9b9 100%);
+			box-shadow: 0px 12rpx 24rpx 0px rgba(0,0,0,0.16);
+			border-radius: 40rpx 0px 0px 40rpx;
+}
+.button-img {
+    width: 60rpx;
+    height: 60rpx;
+    margin-right: 10rpx;
+}

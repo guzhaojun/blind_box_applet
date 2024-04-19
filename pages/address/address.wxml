@@ -1,0 +1,34 @@
+<!--pages/address/address.wxml-->
+<view class="content">
+  <view class="content-view" wx:if="{{addressList.length}}">
+    <view class="view-item" wx:for="{{addressList}}" wx:key="index">
+    <image wx:if="{{!item.disable}}" class="item-img" src="../../icons/dis.png" bindtap="dian" id="{{index}}" mode="" > </image>
+    <image wx:else class="item-img" src="../../icons/diss.png" bindtap="dian" id="{{index}}" mode="" ></image>
+      <view class="item-con">
+        <view class="item-name">
+          {{item.userName}}
+        </view>
+        <view class="item-address">
+          {{item.address}}
+        </view>
+      </view>
+      <view class="edit" bindtap="edit" id="{{index}}">
+        编辑
+      </view>
+    </view>
+  </view>
+  <view class="tip" wx:if="{{!addressList.length}}">
+    暂无数据，请点击新增收货地址
+  </view>
+  <view class="add">
+    <view class="add-que" wx:if="{{address.length}}" bindtap="diz"> 
+      确定
+    </view>
+    <view class="ding"  wx:else bindtap="ddd">
+      确定
+    </view>
+    <view class="add-view"  bindtap="jump">
+      新增收货地址
+    </view>
+  </view>
+</view>

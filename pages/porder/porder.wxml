@@ -1,0 +1,41 @@
+<!--pages/porder/porder.wxml-->
+<view class="content">
+    <view class="tab-con">
+        <view class="tab-item {{tabIndex == index?'active':''}}"  wx:for="{{tabs}}" wx:key="{{id}}"  bindtap="handleItemTap" data-index="{{index}}">
+            <view class="tab-title">{{item}}</view>
+            <view class="tab-line" wx:if="{{tabIndex == index}}"></view>
+        </view>
+    </view>
+    <view class="order-con">
+        <view class="order-item" wx:for="{{orders}}" wx:key="index" >
+            <view class="item-tip" wx:if="{{tabIndex==0}}">待接单</view>
+            <view class="item-tip" wx:if="{{tabIndex==1}}">待取餐</view>
+            <view class="item-tip" wx:if="{{tabIndex==2}}">配送中</view>
+            <view class="item-tip" wx:if="{{tabIndex==3}}">已送达</view>
+            <view class="item-left dndn">
+                <view class="item-adress" wx:if="{{tabIndex==0}}">订单编号：{{item.orderno}}</view>
+                <view class="item-adress" wx:else="">订单编号：{{item.orderId}}</view>
+            </view>
+            <view class="item-left">
+                <image class="left-img" src="../../icons/adress.png" mode=""/>
+                <view class="item-adress">{{item.address}}</view>
+            </view>
+            <view class="item-left">
+                <view class="item-adress" wx:if="{{tabIndex==0}}">下单时间：{{item.createdate}}</view>
+                <view class="item-adress" wx:if="{{tabIndex!=0}}">下单时间：{{item.createdTimes}}</view>
+            </view>
+            <view class="item-left">
+                <view class="item-adress">联系方式：{{item.telnumber}}</view>
+            </view>
+            <!-- <view class="item-left">
+                <view class="item-adress">送餐内容：鱼香肉丝 茄子煲饭</view>
+            </view> -->
+            <view class="item-button" bind:tap="qiang" data-index="{{item.id}}" wx:if="{{tabIndex==0}}">抢单</view>
+            <view class="item-button" bind:tap="uporder" data-index="{{item.id}}" wx:if="{{tabIndex==1}}">已取餐</view>
+            <view class="item-button" bind:tap="uporder" data-index="{{item.id}}" wx:if="{{tabIndex==2}}">已送达</view>
+        </view>
+    </view>
+    <view class="button-tip" bind:tap="jums">
+		<image class="button-img" src="../../icons/cous.png" mode=""/>	个人中心
+		</view>
+</view>

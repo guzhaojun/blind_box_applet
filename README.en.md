@@ -1,9 +1,7 @@
-# blind_box_applet
+# food-applet
 
 #### Description
-最近盲盒项目开始给小伙伴们使用了，清柠v bswlbnhello觉得不错，推荐给大家使用。
-本项目系统是一套前后端分离的项目，使用流行的技术栈JDK8、Springboot2.5、MyBatis-Plus、swagger、Jwt、minio.
-后台管理系统、J、Springboot管理后台、前后端分离管理后台、Vue2管理后台、Element UI管理后台，+vbswlbnhello获取代码。
+ 订餐小程序
 
 #### Software Architecture
 Software architecture description

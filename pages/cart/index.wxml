@@ -1,0 +1,81 @@
+<!-- 收货地址开始 -->
+<view class="fan-con" wx:if="{{address.length>0}}">
+    <image class="fan-img" src="../../icons/adress.png" mode="" />
+    <view class="fan-c">
+        <view class="fsd">
+            <view class="fan-title">{{address[0].userName}}</view>
+            <view class="fan-phone">{{address[0].telNumber}}</view>
+        </view>
+        <view class="fan-tip">{{address[0].address}}</view>
+    </view>
+    <view class="xiu" bind:tap="handleChooseAddress">修改</view>
+</view>
+<view class="fan-con" wx:else>
+    <view class="fan-title">暂无收货地址</view>
+    <view class="xiu" bind:tap="handleChooseAddress">添加</view>
+</view>
+<!-- 收货地址结束 -->
+<!-- 购物车清单开始 -->
+<view class="cart_content">
+    <view class="cart_main">
+        <block wx:if="{{cart.length!==0}}">
+            <view class="cart_item" wx:for="{{cart}}" wx:key="id" wx:for-item="item">
+                <!-- 商品图片开始 -->
+                <navigator class="cart_img_wrap" url="/pages/product_detail/index?id={{item.productId}}">
+                    <image style="width: 180rpx; height: 180rpx;border-radius: 5rpx;" src="{{item.detialImage}}"></image>
+                </navigator>
+                <!-- 商品图片结束 -->
+
+                <!-- 商品信息开始 -->
+                <view class="cart_info_wrap">
+                    <navigator url="/pages/product_detail/index?id={{item.id}}">
+                        <view class="goods_name">{{item.detialName}}</view>
+                    </navigator>
+                    <image class="cart-img" src="../../icons/dele.png" mode="" bindtap="handledel" data-id="{{item.id}}" style="width: 50rpx ;height: 60rpx;" />
+                    <view class="goods_price_wrap">
+                        <view wx:if="{{item.cartType == 1}}" class="goods_price">
+                            ￥{{item.price}}
+                        </view>
+                        <view wx:else class="goods_price">
+                            ￥0
+                        </view>
+                        <view class="cart_num_tool">
+                            <view class="num_edit" bindtap="handleItemNumEdit" data-id="{{item.id}}" data-operation="{{-1}}">−</view>
+                            <view class="goods_num">{{item.num}}</view>
+                            <view class="num_edit" bindtap="handleItemNumEdit" data-id="{{item.id}}" data-operation="{{1}}">+</view>
+                        </view>
+                    </view>
+
+
+                </view>
+                <!-- 商品信息结束 -->
+            </view>
+        </block>
+        <block wx:else>
+            <image style="position: relative;" mode="widthFix" src="/icons/none.png"></image>
+            <view class="qu" bind:tap="qug"></view>
+        </block>
+    </view>
+</view>
+<!-- 购物车清单结束 -->
+
+<!-- 底部工具栏开始 -->
+<view class="footer_tool">
+    <!-- 合计开始 -->
+    <view class="total_price_wrap">
+        <view class="total_price">
+            合计：<text class="total_price_text">￥{{totalPrice}}</text>
+        </view>
+    </view>
+    <!-- 合计结束 -->
+
+    <!-- 结算开始 -->
+    <view class="order_pay_wrap" bindtap="dddd">
+        清空
+    </view>
+    <view class="order_pay_wrap" bindtap="handlePay">
+        结算({{totalNum}})
+    </view>
+    <!-- 结算结束 -->
+</view>
+<!-- 底部工具栏结束 -->

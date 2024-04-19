@@ -1,0 +1,163 @@
+/* pages/edta/edta.wxss */
+page{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: white;
+}
+.navi_title{
+  width: 100%;
+}
+.navi_bottom{
+  border-top: 1rpx solid #dcdcdc; 
+  width: 100%;
+  flex: 1;
+  padding: 0 20rpx;
+}
+.scroll{
+  width: 700rpx;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 50rpx;
+}
+.item_top{
+  margin-top: 11rpx; 
+}
+.item_view{
+  margin-top: 30rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1rpx solid rgba(0,0,0,0.1);
+}
+.item_left{
+  width: 180rpx;
+  display: flex;
+}
+
+.star_view{
+  margin-right: 10rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #FF5A5A;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.name_view{
+  margin-right: 10rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #191919;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+
+.right_view{
+  width: 540rpx;
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10rpx;
+  align-items: center;
+}
+.white_bg{
+  background: white;
+}
+.choose_item{
+  margin-right: 40rpx;
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+.choose_img{
+  width: 28rpx;
+  height: 28rpx;
+}
+.choose_name{
+  margin-left: 10rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #000000;
+}
+
+.channel_view{
+  padding: 10rpx;
+  font-size: 30rpx;
+color: #000000;
+letter-spacing: 0;
+font-weight: 500;
+  width: 100%;
+}
+ .channel_input{
+  width: 100%;
+  padding: 10rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 30rpx;
+  color: #000000;
+  letter-spacing: 0;
+  font-weight: 500;
+}
+
+.tes {
+  margin-left: 0;
+}
+
+.button {
+  width: 100%;
+  padding: 10rpx 10rpx 10rpx -20rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 30rpx;
+  color: #666;
+  letter-spacing: 0;
+  font-weight: 500;
+  background-color: #fff;
+  text-align: left;
+}
+
+.title {
+  font-size: 30rpx;
+ color: #000000;
+}
+.display_verty{
+  display: flex;
+}
+.bottom_view{
+ 
+  width: 654rpx;
+height: 92rpx;
+background:#67c9a8;
+border-radius: 20rpx;
+margin-top:76rpx ;
+font-size: 36rpx;
+color: #FFFFFF;
+letter-spacing: 0;
+text-align: center;
+font-weight: 500;
+line-height: 92rpx;
+margin-left: 20rpx;
+}
+
+.nobackground{
+  background-color: white;
+}
+
+.tips {
+  font-size: 26rpx;
+  color: red;
+  margin-top: 10rpx;
+
+}
+
+.special {
+  display: flex;
+  flex-direction: column;
+}
+
+.special_name {
+  width: 300rpx;
+}

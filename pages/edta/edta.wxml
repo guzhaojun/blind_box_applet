@@ -1,0 +1,29 @@
+<view class="navi_bottom">
+		<view class="item_view">
+			<view class="item_left">
+				<view class="name_view">手机号：</view>
+			</view>
+			<view class="right_view">
+					<input class="channel_input" bindinput="tel_input" value="{{telNumber}}" type='number' maxlength="11" placeholder="请填写您的收货手机号"></input>
+				</view>
+			</view>
+			<!--  -->
+			<view class="item_view item_top">
+				<view class="item_left">
+					<view class="name_view">姓名：</view>
+				</view>
+				<view class="right_view">
+					<input class="channel_input" bindinput="uname_input" value="{{userName}}" placeholder="请填写收件人的姓名"></input>
+				</view>
+			</view>
+			<view class="item_view item_top">
+				<view class="item_left">
+					<view class="name_view">收货地址：</view>
+				</view>
+				<view class="right_view">
+					<input class="channel_input" bindinput="address_input" value="{{address}}" placeholder="请填写收货地址"></input>
+				</view>
+			</view>
+		<view class="bottom_view" catchtap="subMit">确定</view>
+</view>
+

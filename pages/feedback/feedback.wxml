@@ -1,0 +1,6 @@
+<!--pages/feedback/feedback.wxml-->
+<view class="content">
+    <view class="inputBox"><textarea class="textarea2" auto-height minlength="{{minAddr}}" maxlength="{{maxAddr}}" placeholder="请输入反馈" placeholder-class="phcolor" bindinput="inputeditAddr" data-obj="contentAddr" value="{{contentAddr}}"><text class="currentWordNumber">{{currentWordNumberAddr|0}}/{{maxAddr}}</text></textarea>
+    </view>
+    <button  style="margin-left: 300rpx; color: #67c9a8; margin-top: 100rpx;"  size="mini" type="warn"  bindtap="handledel">确定</button>
+</view>
