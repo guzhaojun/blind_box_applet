@@ -61,39 +61,18 @@
 
    ### 🖥️后台页面
 
-   ![image-20240409093250861](data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2996 1520"></svg>)
+![输入图片说明](image-20240409093429214.png)
+![输入图片说明](image-20240409093617039.png)![输入图片说明](image-20240409093359363.png)
+![输入图片说明](image-20240409093334800.png)
+![输入图片说明](image-20240409093250861.png)
 
-   
 
-   ![image-20240409093334800](data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2600 852"></svg>)
-
-   
-
-   ![image-20240409093359363](data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2568 1520"></svg>)
-
-   
-
-   ![image-20240409093429214](data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2550 1418"></svg>)
-
-   
 
    ###   📱手机端前台界面
+   ![输入图片说明](image-20240409093617039.png)
+![输入图片说明](image-20240409093702329.png)
 
-   ![image-20240409093617039](data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 682 1148"></svg>)
 
-   
-
-   ![image-20240409093702329](/Users/gzj/Desktop/媒体/img/picGo/image-20240409093702329.png)
-
-   
-
-   ![image-20240409093719742](/Users/gzj/Desktop/媒体/img/picGo/image-20240409093719742.png)
-
-   ![image-20240409093751600](/Users/gzj/Desktop/媒体/img/picGo/image-20240409093751600.png)
-
-   
-
-   ![WX20230626-172309@2x](/Users/gzj/Desktop/媒体/img/picGo/WX20230626-172309@2x.png)
 
    清柠软件编程
 
